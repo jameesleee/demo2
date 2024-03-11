@@ -41,6 +41,20 @@
   border-radius: 20px;
   /* 鼠标手样式 */
   cursor: pointer;
+  display: inline-block;
+  box-shadow:
+    2px 2px 5px rgb(57, 25, 200),
+    -2px -2px 5px red;
+  transition: all 0.2s;
+}
+
+.mySpan:hover {
+  color: black;
+}
+
+.mySpan:active{
+  transform: translateY(0.5rem);
+  box-shadow: none;
 }
 
 header {

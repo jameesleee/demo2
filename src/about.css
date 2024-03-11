@@ -5,18 +5,33 @@ body {
 
 .mySpan {
   /* 外间距 */
-  /* margin: 5px 0; */
+  /* margin: 100px; */
+  margin: 5px 10px;
   /* 内间距 */
   padding: 5px 10px;
   /* 字体颜色 */
   color: #fff;
   /* 背景颜色 */
-  background-color: #1379c2;
+  background-color: #13c2c2;
+  background: linear-gradient(to right bottom, #13c2c2, #1379c2);
   /* 圆角处理 */
-  border-radius: 5px;
+  border-radius: 20px;
   /* 鼠标手样式 */
   cursor: pointer;
+  display: inline-block;
+  box-shadow:
+    2px 2px 5px rgb(57, 25, 200),
+    -2px -2px 5px red;
+  transition: all 0.2s;
+}
 
+.mySpan:hover {
+  color: black;
+}
+
+.mySpan:active{
+  transform: translateY(0.5rem);
+  box-shadow: none;
 }
 
 img {
